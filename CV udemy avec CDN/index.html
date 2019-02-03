@@ -1,482 +1,342 @@
-/* -------------------------------------------GENERAL--------------------------------------------- */
-
-body{
-    /*font-family: 'lato', sans-serif;*/
-    font-family: 'Orbitron', sans-serif;
-}
-
-h1,h2,h3,h4,h5,h6{
-    font-weight: bold;
-}
-
-
-img{
-    max-width: 100%;
-    height: auto;
-} 
-
-section{
-    padding: 45px 0 80px 0;
-}
-
-section .heading{
-    text-align: center;
-    padding-bottom: 40px;
-}
-
-section .heading h2{
-    text-transform: uppercase;
-}
-
-.red-divider{
-    width: 100px;
-    height: 2px;
-    background: #0ac3a7;
-    margin: 0 auto;
-}
-
-.white-divider{
-    width: 100px;
-    height: 2px;
-    background: #fff;
-    margin: 0 auto;
-}
-
-ul, ol{
-    list-style-type: none;
-}
-
-
-/* ------------------------------------------------MENU NAV----------------------------------------- */
-
-.navbar
-{
-  /*  background: #0ac3a7!important; ---à mettre en place en cas de .navbar-default--- */
-    font-size: 12px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.navbar-brand{
-     /*font-family: 'Orbitron', sans-serif;*/
-     font-size: 0.75em;
-     color: #fff !important;
-}
-
-.navbar .navbar-nav
-{
-    display: inline-block;
-    float: none !important;
-    vertical-align: top;
-}
-
-.navbar .navbar-collapse{
-    text-align: center;
-}
-
-.navbar li a{
-    color: #fff !important;
-    font-size: 0.75em;
-}
-
-.navbar-nav li a:hover, .navbar-nav li.active a{
-    color: #0ac3a7!important;
-    background-color: #fff !important;
-}
-
-.navbar a:hover{
-     color: #0ac3a7!important;
-     background-color: #fff !important;
-}
-
-
-/* ------------------------------------------------ABOUT---------------------------------------  */
-
-#about{
-    padding-top: 100px;
-    background: #0ac3a7;
-}
-
-.profil-picture{
-    text-align: center;
-    margin: 0 auto;
-    float: none;
-}
-
-#about .heading h1{
-    color: #fff;
-    text-shadow: 1px 1px 1px #111;
-    text-transform: uppercase;  
-}
-
-#about .heading h3{
-    color: #fff;
-    text-shadow: 1px 1px 1px #111;
-}
-
-#about .button1{
-    font-weight: bold;
-    text-transform: uppercase;
-    color: white;
-    border: 1px solid white;
-    box-shadow: 2px 2px 2px #fff;
-    margin-top: 20px;
-    padding: 18px 50px;
-    border-radius: 3px;
-    display: inline-block;
-    background-color: #0ac3a7;
-    transition: all 0.3s ease-in 0s;
-}
-
-#about .button1:hover{
-    background: white;
-    color: #0ac3a7;
-    text-decoration: none;
-}
-
-
-
-/* ---------------------------------------------SKILLS-------------------------------------- */
-
-
-#skills{
-    background: #fff;
-}
-
-#skills .heading h2{
-    color: #0ac3a7;
-    
-}
-
-#skills .progress{
-    height: 100%;
-    margin: 30px 20px;
-    background: #ddd;
-}
-
-
-#skills .progress-bar{
-    background: #0ac3a7;
-}
-
-#skills .progress h5{
-    text-shadow: 1px 1px 1px #000;
-}
-
-/* ---------------------------------------------EXPERIENCES--------------------------------------- */
-
-#experience{
-    background: #0ac3a7;
-}
-
-#experience .heading h2{
-    color: #fff;
-}
-
-.timeline{
-    padding: 30px 10px;
-    position: relative;
-}
-
-.timeline:before{
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    content: " ";
-    width: 5px;
-    background: #333;
-    left: 50%;
-    margin-left: -2.5px.
-}
-
-.timeline > li{
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.timeline > li:after{
-    clear: both;
-}
-
-.timeline > li:before, .timeline > li:after{
-    content: " ";
-    display: table;
-}
-
-.timeline li .timeline-badge{
-    color: #0ac3a7;
-    width: 50px;
-    line-height: 50px;
-    font-size: 20px;
-    text-align: center;
-    position: absolute;
-    top: 16px;
-    left: 50%;
-    margin-left: -25px;
-    background: #ddd;
-    border-radius:  50%;
-}
-
-.timeline-panel-container{
-    width: 50%;
-    float: left;
-    
-}
-
-.timeline-panel-container-inverted{
-    width: 50%;
-    float: right;
-}
-
-.timeline-panel{
-    width: 90%;
-    float: right;
-    margin-right: 40px;
-    border: 1px solid #d4d4d4;
-    border-radius:  7px;
-    padding: 20px 25px;
-    position: relative;
-    box-shadow: 0 1px 6px rgba('0,0,0, 0.175');
-    background: #fff;
-}
-
-.timeline-panel-container-inverted .timeline-panel{
-    float: left;
-    margin-left: 40px;
-}
-
-.timeline-panel:after{
-    position: absolute;
-    top: 27px;
-    right: -14px;
-    display: inline-block;
-    border-top: 14px solid transparent;
-    border-left: 14px solid #fff;
-    border-right: 0 solid #ffff;
-    border-bottom: 14px solid transparent;
-    content: " ";
-}
-
-.timeline-panel-container-inverted .timeline-panel:after{
-    border-left-width: 0px;
-    border-right-width: 14px;
-    left: -14px;
-    right: auto;
-}
-
-
-;timeline-heading h3{
-    margin-top: 5px;
-    font-size: 20px;
-}
-
-.timeline-heading h4{
-    color: #0ac3a7;
-}
-
-
-/* -------------------------------------------------------DIPLOMES et CERTIFICATIONS------------------------------------------ */ 
-
-#education{
-    background: #fff;
-}
-
-#education .heading h2{
-    color: #0ac3a7;
-}
-
-#education .heading h3{
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    background: #0ac3a7;
-    border: 1px solid #0ac3a7;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-.education-block{
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 30px;
-    background: #ddd;
-    border-radius: 10px;
-    border: 2px solid #ccc;
-    margin-bottom: 20px;
-}
-
-.education-block h5{
-    color: #888;
-    font-size: 15px;
-    margin-bottom: 15px;
-}
-
-.education-block .glyphicon{
-    font-size: 40px;
-}
-
-.education-block h3{
-    color: #0ac3a7;
-}
-
-.education-block h4{
-    margin-bottom: 20px;
-}
-
-.education-block .red-divider{
-    margin-bottom: 20px;
-}
-
-.education-block p{
-    font-weight: bold;
-}
-
-/* -------------------------------------------------------PORTFOLIO------------------------------------------- */
-
-#portfolio{
-    background: #0ac3a7;
-}
-
-#portfolio .heading h2{
-    color: #fff;
-}
-
-#portfolio .thumbnail img{
-    width: 100%;
-    height: 100%;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-}
-
-#portfolio .thumbnail img:hover{
-    filter: none;
-    -webkit-filter: none;
-}
-
-
-/* ------------------------------------------------------CITATIONS-------------------------------------------- */
-
-#citations{
-    background: #fff;
-}
-
-#citations .heading h2{
-    color: #0ac3a7;
-}
-
-.carousel-control.left, .carousel-control.right{
-    background-image: none;
-    color: #0ac3a7;
-}
-
-.carousel-indicators{
-    bottom: 0px;
-}
-
-.carousel-indicators li{
-    border-color: #0ac3a7;
-}
-
-.carousel-indicators li.active{
-   background-color: #0ac3a7;
-}
-
-#myCarousel .item{
-    padding: 40px 30px !important;
-}
-
-#myCarousel .item h3{
-    font-style: italic;
-    color: #0ac3a7;
-}
-
-
-/*-------------------------------------------------------CONTACT---------------------------------------------*/
-#contact{
-  background: #0ac3a7;
-}
-
-#contact .heading h2{
-  color: #fff;
-}
-#contact-form{
-  font-size: 20px;
-  color: #fff;
-}
-
-.form-control{
-  height: 50px;
-  font-size: 18px;
-}
-
-.comments{
-  font-style: italic;
-  font-size: 18px;
-  color: #fff;
-  height: 25px;
-}
-
-#contact-form input[type=submit]{
-  margin: 40px auto; 0px;
-  display: block;
-}
-
-
-.thank-you{
-  text-align: center;
-  margin-top: 15px;
-  font-weight: bold;
-  font-size: 22px;
-}
-
-#contact .button1{
-    font-weight: bold;
-    text-transform: uppercase;
-    color: white;
-    border: 1px solid white;
-    box-shadow: 2px 2px 2px #fff;
-    margin-top: 20px;
-    padding: 18px 50px;
-    border-radius: 3px;
-    display: inline-block;
-    background-color: #0ac3a7;
-    transition: all 0.3s ease-in 0s;
-}
-
-#contact .button1:hover{
-    background: white;
-    color: #0ac3a7;
-    text-decoration: none;
-}
-
-
-
-
-
-
-/* ------------------------------------------------------FOOTER----------------------------------------------- */
-
-footer{
-    background: #333;
-    padding: 20px 0 40px;
-}
-
-footer .glyphicon{
-    font-size: 25px;
-    margin: 20px;
-    color:  #0ac3a7;
-    height: 30px;
-}
-
-footer .glyphicon:hover{
-    font-size: 27px;
-}
-
-footer h5{
-    color: #fff;
-    font-weight: normal;
-}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+   
+    <title>FRANK-BOUCHUT</title>
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="60">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#about"><span class="glyphicon glyphicon-home"></span> FRANK BOUCHUT</a></li>
+                        <li><a href="#skills">CompÃ©tences</a></li>
+                        <li><a href="#experience">ExpÃ©rience</a></li>
+                        <li><a href="#education">Diplomes & Certifications</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#citations">Citations</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+              </div>
+          </div>
+      </nav>
+
+      <section id="about" class="container-fluid">
+        <div class="col-xs-8 col-md-4 profil-picture">
+            <img src="images/me.jpg" alt="Frank" class="img-circle">
+        </div>
+        <div class="heading">
+            <h3>Developpeur Web Back End<br>
+             Specialisation Symfony</h3>
+            <a href="images/CV.jpg" target="_blank" class="button1">TÃ©lÃ©charger CV</a>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="red-divider"></div>
+        <div class="heading">
+            <h2>CompÃ©tences</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                            <h5>Symfony 85%</h5>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                            <h5>PHP & MySQL 80%</h5>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%">
+                            <h5>JAVASCRIPT & JQUERY 55%</h5>
+                        </div>
+                    </div>                    
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemax="0" aria-valuemax="100" style="width:80%">
+                            <h5>HTML 80%</h5>
+                        </div>
+                    </div>  
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                            <h5>CSS 80%</h5>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                            <h5>BOOTSTRAP 90%</h5>
+                        </div>
+                    </div>                                      
+                </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="experience">
+        <div class="container">
+            <div class="white-divider"></div>
+            <div class="heading">
+                <h2>ExpÃ©rience Professionnelle</h2>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-badge"><span class="glyphicon glyphicon-modal-window"></span></div>
+                    <div class="timeline-panel-container-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3><a href="https://oclock.io/programme" target="_blank">O'clock.io</a></h3>
+                                <h4>Formation Developpeur Web</h4>
+                                <p class="test-mute"><small class="glyphicon glyphicon-time"></small> 2018-2019</p>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Apprentisage des langages 4 mois (HTML, CSS, JS, PHP, ect)</p>
+                                <p>Specialisation Symfony 1 mois </p>
+                                <p>Projet de fin de formation 1 mois </p>
+                                <p>Passage du <a href="http://www.rncp.cncp.gouv.fr/grand-public/visualisationFiche?format=fr&fiche=31114" target="_blank">Titre Pro</a> et <a href="https://www.opquast.com" target="_blank">Certification Opquast</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge"><span class="glyphicon glyphicon-home"></span></div>
+                    <div class="timeline-panel-container">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3>CONFORAMA</h3>
+                                <h4>Vendeur SpecialisÃ© Electro-Domestique</h4>
+                                <p class="test-mute"><small class="glyphicon glyphicon-time"></small> 2002-2018</p>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Vente et conseil Ã  la clientÃ¨le</p>
+                                <p>Gestion des approvisionnements rayon et mise en ambiance</p>
+                                <p>Developpement des relations client</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge"><span class="glyphicon glyphicon-scale"></span></div>
+                    <div class="timeline-panel-container-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3>FEU VERT</h3>
+                                <h4>Chef de rayon</h4>
+                                <p class="test-mute"><small class="glyphicon glyphicon-time"></small> 2001-2002</p>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Vente et conseil Ã  la clientÃ¨le, suivi des litiges et SAV</p>
+                                <p>Gestion des approvisionnements produits et des commandes client</p>
+                                <p>Developpement des relations client</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+      </section>
+
+      <section id="education">
+        <div class="container">
+               <div class="red-divider"></div>
+                    <div class="heading">
+                        <h2>Diplomes & Certifications</h2>
+                    </div>
+              <div class="row">
+                    <div class="col-sm-6">
+                        <div class="heading"><h3>Diplomes</h3></div>
+                        <div class="education-block">
+                            <h5>1994-1997</h5>
+                            <span class="glyphicon glyphicon-education"></span>
+                            <h3>LEGTA Edouard HERRIOT - Domaine de Cibeins</h3>
+                            <h4>BaccalaurÃ©at Techonologique STAE (Sciences et Technologie de l'Agronomie et de l'Environnement)</h4>
+                            <div class="red-divider"></div>
+                            <p>SpÃ©cialitÃ© AmÃ©nagement des territoires</p>
+                        </div>
+                         <div class="education-block">
+                            <h5>1997-2000</h5>
+                            <span class="glyphicon glyphicon-education"></span>
+                            <h3>LEGTA Edouard HERRIOT - Domaine de Cibeins</h3>
+                            <h4>BTS Technico-Commercial (niveau)</h4>
+                            <div class="red-divider"></div>
+                            <p>SpÃ©cialitÃ© produits<br> amylacÃ©s et sucrants</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="heading"><h3>Certifications</h3></div>
+                        <div class="education-block">
+                            <h5>2018</h5>
+                            <span class="glyphicon glyphicon-education"></span>
+                            <h3>apprendre-Ã -coder.com <br>Udemy</h3>
+                            <h4>Formation online complÃ¨te <br>"Developpeur Web"</h4>
+                            <div class="red-divider"></div>
+                            <p>HTML/CSS, JavaScript, Jquery, PHP, MySQL,
+                            <br> Bootstrap, Responsive Web Design</p>
+                        </div>
+                        <div class="education-block">
+                            <h5>2014</h5>
+                            <span class="glyphicon glyphicon-education"></span>
+                            <h3>OpenClassroom</h3>
+                            <h4>3 MOOC (Massive Open Online Course)</h4>
+                            <div class="red-divider"></div>
+                            <p>WEB: <a href="docs/web.pdf" target="_blank">Certificat nÂ° 949572171</a><br>
+                                HTML5 et CSS3: <a href="docs/html.pdf" target="_blank">Certificat nÂ° 99820614</a><br>
+                                PHPet MySQL: <a href="docs/php.pdf" target="_blank">Certificat nÂ° 67911226</a></p>
+                        </div>
+                    </div>
+              </div>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <div class="container">
+            <div class="white-divider"></div>
+                <div class="heading">
+                    <h2>Portfolio</h2>
+                </div>
+                <div class="row">
+                     <div class="col-sm-6">
+                        <a class="thumbnail" href="top5/index.html" target="_blank">
+                           <img  src="images/top5.png" alt="top5">
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a class="thumbnail" href="voyage/index.html" target="_blank">
+                            <img src="images/travel.png" alt="travel agency">
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a class="thumbnail" href="snake/index.html" target="_blank">
+                            <img src="images/snake.png" alt="snake">
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a class="thumbnail" href="#">
+                            <img src="images/burger.png" alt="snake">
+                        </a>
+                    </div>
+                </div>
+        </div>
+      </section>
+
+      <section id="citations">
+        <div class="container">
+            <div class="red-divider"></div>
+            <div class="heading">
+                <h2>Citations</h2>
+            </div>
+            <div id="myCarousel" class="carousel slide text-center"  data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-silde-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-silde-to="1"></li>
+                    <li data-target="#myCarousel" data-silde-to="2"></li>
+                </ol >
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <h3>"Jâ€™ai toujours rÃªvÃ© que mon ordinateur soit aussi simple<br> Ã  utiliser que mon tÃ©lÃ©phone. Ce rÃªve est devenu rÃ©alitÃ© :<br> je ne comprends plus comment utiliser mon tÃ©lÃ©phoneâ€Š"</h3>
+                        <h4>â€ŠBjarne Stroustrup</h4>
+                    </div>
+                    <div class="item">
+                        <h3>"Un ordinateur vous permet de faire plus de bÃªtises, beaucoup plus rapidement,<br>
+                            que nâ€™importe quelle autre invention dans lâ€™histoire de lâ€™humanitÃ©.<br>
+                            Ã€ lâ€™exception notable des armes Ã  feu et de la tequila"â€Š</h3>
+                        <h4>Mitch Ratcliffe</h4>
+                    </div>
+                    <div class="item">
+                        <h3>"Si debugger, câ€™est supprimer des bugs,<br> alors programmer<br> ne peut Ãªtre que les ajouter"</h3>
+                        <h4>â€ŠEdsger Dijkstra</h4>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev" role="button">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next" role="button">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container">
+          <div class="white-divider"></div>
+          <div class="heading">
+            <h2>Contact</h2>
+          </div>
+          <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                      <form id="contact-form" method="post" action="" role="form">
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <label for="firstname">PrÃ©nom <span> *</span></label>
+                                  <input id="firstname" type="text" name="firstname" class="form-control" placeholder="Votre prÃ©nom">
+                                  <p class="comments"></p>
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="name">Nom <span> *</span></label>
+                                  <input id="name" type="text" name="name" class="form-control" placeholder="Votre Nom">
+                                  <p class="comments"></p>
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="email">Email <span> *</span></label>
+                                  <input id="email" type="text" name="email" class="form-control" placeholder="Votre Email">
+                                  <p class="comments"></p>
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="phone">TÃ©lÃ©phone</label>
+                                  <input id="phone" type="tel" name="phone" class="form-control" placeholder="Votre TÃ©lÃ©phone">
+                                  <p class="comments"></p>
+                                </div>
+                                <div class="col-md-12">
+                                  <label for="name">Message<span> *</span></label>
+                                  <textarea id="message" name="message" class="form-control" placeholder="Votre message"  rows="4"></textarea>
+                                  <p class="comments"></p>
+                                </div>
+                                <div class="col-md-12">
+                                  <p><strong>* Ces informations sont requises</strong></p>
+                                </div>
+                                <div class="col-md-12">
+                                  <input type="submit" class="button1" value="Envoyer">
+                                </div>
+                              </div>
+                        </form>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <footer class="text-center">
+        <a href="#about">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <h5>
+            <a href="https://www.linkedin.com/in/frank-bouchut-6b3783106/"><i class="fab fa-linkedin fa-3x"></i></a>
+            &copy; 2018 frankdev.fr
+            <a href="https://github.com/frankb01"><i class="fab fa-github-square fa-3x"></i></a>
+        </h5>
+      </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
+			
